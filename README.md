@@ -62,7 +62,7 @@ Jdk-1.8 | 基于 JDK 1.8 开发的项目
 ---------------------------
 ### <h2 id="6">🎉致谢</h2>
 
-- **更多参考精彩博文请看这里：[小傅哥的博客](https://bugstack.cn)
+- **更多参考精彩博文请看这里：[小傅哥的博客](https://bugstack.cn)**
   
 - **更多参考精彩博文请看这里：[陈永佳的博客](https://blog.csdn.net/mrs_chens)**
 

@@ -20,9 +20,9 @@ import lombok.extern.slf4j.Slf4j;
 public class StoreFactory {
 
     /**
+     * 通过工厂模式调用不同的service
      *
-     *
-     * @param commodityType
+     * @param commodityType 奖励类型
      * @return com.base.demo.design.dao.ICommodity
      * @date 2021/6/26 11:35
      * @author ChenYongJia

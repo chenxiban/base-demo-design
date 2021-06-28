@@ -11,6 +11,6 @@
     <artifactId>base-singleton-design</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>base-singleton-design</name>
-    <description>实战七种单例模式/description>
+    <description>实战七种单例模式</description>
 
 </project>

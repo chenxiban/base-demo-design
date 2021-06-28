@@ -16,8 +16,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>base-factory-design</module>
         <module>common</module>
+        <module>base-factory-design</module>
+        <module>base-singleton-design</module>
     </modules>
 
     <dependencies>

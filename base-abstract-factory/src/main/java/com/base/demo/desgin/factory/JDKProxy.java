@@ -6,7 +6,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
 /**
- * @Description: JDK代理
+ * @Description: JDK
  * @BelongsProject: base-demo-design
  * @BelongsPackage: com.base.demo.desgin.factory
  * @Author: ChenYongJia

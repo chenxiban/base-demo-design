@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicReference;
  * @Email: chen87647213@163.com
  * @Version: 1.0
  */
-public class SingletonThreadSafety {
+public final class SingletonThreadSafety {
 
     /**
      * 用 CAS 自旋锁修饰当前类

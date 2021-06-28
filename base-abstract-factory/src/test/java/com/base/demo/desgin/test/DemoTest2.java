@@ -20,6 +20,18 @@ import org.junit.Test;
 @Slf4j
 public class DemoTest2 {
 
+    /**
+     * 这个其实挺有难度的，因为他是以解决共性问题，而提取出来的，中间件设计方式。解决全组人在不同系统上升级 redis 集群的过程。怎么做到让大家升级无感知，而写的代码逻辑
+     *
+     * 实际上CacheServiceImpl 只是一个公共基础的类，
+     * 实际上调用是通过这个地方的ICacheAdapter.class.getMethod(method.getName(),
+     * ClassLoaderUtils.getClazzByArgs(args)).invoke(cacheAdapter, args);
+     *
+     * @return void
+     * @date 2021/6/28 10:34
+     * @author ChenYongJia
+     * @version 1.0
+     */
     @Test
     public void test_CacheService() throws Exception {
 

@@ -9,10 +9,16 @@ package com.base.demo.design.hungrymode;
  * @Email: chen87647213@163.com
  * @Version: 1.0
  */
-public class SingletonThreadSafety {
+public final class SingletonThreadSafety {
 
     /**
      * 直接实例化对象
+     *
+     * 如果主动使用Singleton类，instance实例将直接完成创建，包括其中的实例变量都会得到初始化，
+     * 但是instance可能被加载很长一段时间后才被使用，instance实例开辟的堆内存会驻留更久的时间，
+     * 如果说一个类的成员变量不多，且占用内存资源较少，可以使用饿汉式，总结它可以保证多个线程下唯一实例，
+     * getInstance方法性能较高，但是无法进行懒加载。
+     *
      */
     private static SingletonThreadSafety instance = new SingletonThreadSafety();
 

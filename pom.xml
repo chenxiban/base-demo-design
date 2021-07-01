@@ -24,6 +24,8 @@
         <module>base-singleton-design</module>
         <!-- 实战建造者模式「各项装修物料组合套餐选配场景」 -->
         <module>base-builders-design</module>
+        <!-- 实战原型模式「上机考试多套试，每人题目和答案乱序排列场景」 -->
+        <module>base-prototype-design</module>
     </modules>
 
     <dependencies>

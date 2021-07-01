@@ -42,6 +42,8 @@
     |-- base-builders-design  建造者模式「各项装修物料组合套餐选配场景」
     |-- base-abstract-factory 抽象工厂模式「替换Redis双集群升级，代理类抽象场景」
     |-- base-prototype-design 原型模式「上机考试多套试，每人题目和答案乱序排列场景」
+    |-- base-responsibility-design 责任链模式「模拟618电商大促期间，项目上线流程多级负责人审批场景」
+    |-- base-strategy-design  策略模式「模拟多种营销类型优惠券，折扣金额计算策略场景」
     |-- 后续添加继续补齐
 ```
 

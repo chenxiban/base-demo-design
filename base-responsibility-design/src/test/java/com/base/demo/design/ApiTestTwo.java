@@ -2,10 +2,10 @@ package com.base.demo.design;
 
 import com.alibaba.fastjson.JSON;
 import com.base.demo.design.model.AuthLink;
-import com.base.demo.design.service.AuthService;
-import com.base.demo.design.service.impl.Level1AuthLink;
-import com.base.demo.design.service.impl.Level2AuthLink;
-import com.base.demo.design.service.impl.Level3AuthLink;
+import com.base.demo.design.test.AuthService;
+import com.base.demo.design.test.impl.Level1AuthLink;
+import com.base.demo.design.test.impl.Level2AuthLink;
+import com.base.demo.design.test.impl.Level3AuthLink;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 

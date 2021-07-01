@@ -2,7 +2,7 @@ package com.base.demo.design;
 
 import com.alibaba.fastjson.JSON;
 import com.base.demo.design.controller.AuthController;
-import com.base.demo.design.service.AuthService;
+import com.base.demo.design.test.AuthService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 

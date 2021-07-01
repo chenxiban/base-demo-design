@@ -1,8 +1,8 @@
-package com.base.demo.design.service.impl;
+package com.base.demo.design.test.impl;
 
 import com.base.demo.design.model.AuthInfo;
 import com.base.demo.design.model.AuthLink;
-import com.base.demo.design.service.AuthService;
+import com.base.demo.design.test.AuthService;
 
 import java.text.ParseException;
 import java.util.Date;

@@ -1,7 +1,7 @@
 package com.base.demo.design.controller;
 
 import com.base.demo.design.model.AuthInfo;
-import com.base.demo.design.service.AuthService;
+import com.base.demo.design.test.AuthService;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.base.demo.design</groupId>
-    <artifactId>common</artifactId>
+    <artifactId>base-common-design</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>common</name>
+    <name>base-common-design</name>
     <description>公用工具类</description>
 
 </project>

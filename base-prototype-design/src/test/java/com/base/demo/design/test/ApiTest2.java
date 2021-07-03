@@ -16,6 +16,16 @@ import org.junit.Test;
 @Slf4j
 public class ApiTest2 {
 
+    /**
+     * 我们通过junit单元测试的方式验证接口服务，强调日常编写好单测可以更好的提高系统的健壮度。
+     *
+     * 测试一把梭形式下的代码Api
+     *
+     * @return void
+     * @date 2021/7/3 8:48
+     * @author ChenYongJia
+     * @version 1.0
+     */
     @Test
     public void test_QuestionBank() throws CloneNotSupportedException {
         QuestionBankController questionBankController = new QuestionBankController();

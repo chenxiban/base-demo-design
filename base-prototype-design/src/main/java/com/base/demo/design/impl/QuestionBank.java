@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.Map;
 
 /**
- * @Description: 题库实现类
+ * @Description: 题库实现类--主要负责将各个的题目进行组装最终输出试卷。
  * @BelongsProject: base-demo-design
  * @BelongsPackage: com.base.demo.design.impl
  * @Author: ChenYongJia
@@ -40,23 +40,59 @@ public class QuestionBank implements Cloneable {
      */
     private ArrayList<AnswerQuestion> answerQuestionList = new ArrayList<>();
 
+    /**
+     * 封装添加方法
+     *
+     * @param choiceQuestion 选择题对象
+     * @return com.base.demo.design.impl.QuestionBank
+     * @date 2021/7/3 8:59
+     * @author ChenYongJia
+     * @version 1.0
+     */
     public QuestionBank append(ChoiceQuestion choiceQuestion) {
         choiceQuestionList.add(choiceQuestion);
         return this;
     }
 
+    /**
+     * 封装添加方法
+     *
+     * @param answerQuestion 问答题对象
+     * @return com.base.demo.design.impl.QuestionBank
+     * @date 2021/7/3 8:59
+     * @author ChenYongJia
+     * @version 1.0
+     */
     public QuestionBank append(AnswerQuestion answerQuestion) {
         answerQuestionList.add(answerQuestion);
         return this;
     }
 
+    /**
+     * 克隆方法
+     *
+     * @return java.lang.Object
+     * @date 2021/7/3 8:59
+     * @author ChenYongJia
+     * @version 1.0
+     */
     @Override
     public Object clone() throws CloneNotSupportedException {
         QuestionBank questionBank = (QuestionBank) super.clone();
+        /**
+         *
+         * clone顾名思义就是复制， 在Java语言中， clone方法被对象调用，所以会复制对象。
+         * 所谓的复制对象，首先要分配一个和源对象同样大小的空间，在这个空间中创建一个新的对象。
+         *
+         * 有几种方式可以创建对象呢？
+         * 1 使用new操作符创建一个对象
+         * 2 使用clone方法复制一个对象
+         * https://blog.csdn.net/zhangjg_blog/article/details/18369201--Java中的clone方法 -- 原型模式
+         */
         questionBank.choiceQuestionList = (ArrayList<ChoiceQuestion>) choiceQuestionList.clone();
         questionBank.answerQuestionList = (ArrayList<AnswerQuestion>) answerQuestionList.clone();
 
-        // 题目乱序
+        // 题目乱序--Collections.shuffle()的作用是对集合进行重新打乱(随机排序)。
         Collections.shuffle(questionBank.choiceQuestionList);
         Collections.shuffle(questionBank.answerQuestionList);
         // 答案乱序
@@ -69,10 +105,28 @@ public class QuestionBank implements Cloneable {
         return questionBank;
     }
 
+    /**
+     * 设置考生
+     *
+     * @param candidate 考生
+     * @return void
+     * @date 2021/7/3 9:15
+     * @author ChenYongJia
+     * @version 1.0
+     */
     public void setCandidate(String candidate) {
         this.candidate = candidate;
     }
 
+    /**
+     * 设置考号
+     *
+     * @param number 考号
+     * @return void
+     * @date 2021/7/3 9:15
+     * @author ChenYongJia
+     * @version 1.0
+     */
     public void setNumber(String number) {
         this.number = number;
     }

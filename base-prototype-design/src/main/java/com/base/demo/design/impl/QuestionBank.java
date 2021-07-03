@@ -41,7 +41,7 @@ public class QuestionBank implements Cloneable {
     private ArrayList<AnswerQuestion> answerQuestionList = new ArrayList<>();
 
     /**
-     * 封装添加方法
+     * 封装添加方法--两个append()，对各项题目的添加，有点像我们在建造者模式中使用的方式，添加装修物料
      *
      * @param choiceQuestion 选择题对象
      * @return com.base.demo.design.impl.QuestionBank
@@ -55,7 +55,7 @@ public class QuestionBank implements Cloneable {
     }
 
     /**
-     * 封装添加方法
+     * 封装添加方法--两个append()，对各项题目的添加，有点像我们在建造者模式中使用的方式，添加装修物料
      *
      * @param answerQuestion 问答题对象
      * @return com.base.demo.design.impl.QuestionBank
@@ -69,7 +69,8 @@ public class QuestionBank implements Cloneable {
     }
 
     /**
-     * 克隆方法
+     * 克隆方法--clone() ，这里的核心操作就是对对象的复制，这里的复制不只是包括了本身，同时对两个集合也做了复制。
+     * 只有这样的拷贝才能确保在操作克隆对象的时候不影响原对象。
      *
      * @return java.lang.Object
      * @date 2021/7/3 8:59

@@ -16,7 +16,7 @@ public class TopicRandomUtil {
     private static Integer initialCapacity = 16;
 
     /**
-     * 乱序Map元素，记录对应答案key
+     * 乱序Map元素，记录对应答案key--将原有Map中的选型乱序操作，也就是A的选项内容给B，B的可能给C，同时记录正确答案在处理后的位置信息。
      *
      * @param option 题目
      * @param key    答案

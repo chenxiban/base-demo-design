@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>base-demo-design</artifactId>
+        <groupId>com.base.demo.design</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <groupId>com.base.demo.design</groupId>
+    <artifactId>base-adapter-design</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>base-adapter-design</name>
+    <description>实战适配器模式「从多个MQ消息体中，抽取指定字段值场景」</description>
+</project>

@@ -30,6 +30,8 @@
         <module>base-responsibility-design</module>
         <!-- 策略模式「模拟多种营销类型优惠券，折扣金额计算策略场景」 -->
         <module>base-strategy-design</module>
+        <!-- 实战适配器模式「从多个MQ消息体中，抽取指定字段值场景」 -->
+        <module>base-adapter-design</module>
     </modules>
 
     <dependencies>

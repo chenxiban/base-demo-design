@@ -32,6 +32,8 @@
         <module>base-strategy-design</module>
         <!-- 实战适配器模式「从多个MQ消息体中，抽取指定字段值场景」 -->
         <module>base-adapter-design</module>
+        <!-- 实战迭代器模式「模拟公司组织架构树结构关系，深度迭代遍历人员信息输出场景」 -->
+        <module>base-iterator-design</module>
     </modules>
 
     <dependencies>

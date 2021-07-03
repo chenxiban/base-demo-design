@@ -1,7 +1,7 @@
 package com.base.demo.design.impl;
 
-import com.base.demo.design.model.AnswerQuestion;
-import com.base.demo.design.model.ChoiceQuestion;
+import com.base.demo.design.channel.AnswerQuestion;
+import com.base.demo.design.channel.ChoiceQuestion;
 import com.base.demo.design.utils.prototype.Topic;
 import com.base.demo.design.utils.prototype.TopicRandomUtil;
 

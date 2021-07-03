@@ -4,7 +4,7 @@ import com.base.demo.design.dao.ICommodity;
 import com.base.demo.design.impl.CardCommodityService;
 import com.base.demo.design.impl.CouponCommodityService;
 import com.base.demo.design.impl.GoodsCommodityService;
-import com.base.demo.design.model.CommodityTypeEnum;
+import com.base.demo.design.channel.CommodityTypeEnum;
 import lombok.extern.slf4j.Slf4j;
 
 /**

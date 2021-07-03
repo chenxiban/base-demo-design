@@ -1,4 +1,4 @@
-package com.base.demo.design.model;
+package com.base.demo.design.channel;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

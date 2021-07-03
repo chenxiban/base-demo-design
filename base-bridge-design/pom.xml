@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>base-demo-design</artifactId>
+        <groupId>com.base.demo.design</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <groupId>com.base.demo.design</groupId>
+    <artifactId>base-bridge-design</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>base-bridge-design</name>
+    <description>实战桥接模式「多支付渠道(微信、支付宝)与多支付模式(刷脸、指纹)场景」</description>
+
+</project>

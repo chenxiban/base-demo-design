@@ -1,7 +1,7 @@
 package com.base.demo.design.test.impl;
 
-import com.base.demo.design.model.AuthInfo;
-import com.base.demo.design.model.AuthLink;
+import com.base.demo.design.channel.AuthInfo;
+import com.base.demo.design.channel.AuthLink;
 import com.base.demo.design.test.AuthService;
 
 import java.text.ParseException;

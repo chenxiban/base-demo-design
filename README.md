@@ -37,7 +37,7 @@
 |-- base-demo-design
     |-- base-common-design    用于存放一些公共工具类等
     |-- base-factory-design   工厂方法模式「多种类型商品不同接口，统一发奖服务搭建场景」
-    |-- base-singleton-design 单例模式「7种单例模式案例，Effective Java 作者推荐枚举单例模式」
+    |-- base-singleton-design 单例模式「8种单例模式案例，Effective Java 作者推荐枚举单例模式」
     |-- base-builders-design  建造者模式「各项装修物料组合套餐选配场景」
     |-- base-abstract-factory 抽象工厂模式「替换Redis双集群升级，代理类抽象场景」
     |-- base-prototype-design 原型模式「上机考试多套试，每人题目和答案乱序排列场景」
@@ -46,7 +46,7 @@
     |-- base-iterator-design  迭代器模式「模拟公司组织架构树结构关系，深度迭代遍历人员信息输出场景」
     |-- base-observer-design  观察者模式「模拟类似小客车指标摇号过程，监听消息通知用户中签场景」
     |-- base-adapter-design   适配器模式「从多个MQ消息体中，抽取指定字段值场景」
-    |-- 
+    |-- base-bridge-design    桥接模式「多支付渠道(微信、支付宝)与多支付模式(刷脸、指纹)场景」
     |-- 
     |-- 
     |-- 后续添加继续补齐

@@ -1,4 +1,4 @@
-package com.base.demo.design.model;
+package com.base.demo.design.channel;
 
 import com.base.demo.design.utils.IsEmptyUtils;
 import lombok.AllArgsConstructor;

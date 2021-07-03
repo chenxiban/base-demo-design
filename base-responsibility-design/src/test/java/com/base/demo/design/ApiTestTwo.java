@@ -1,7 +1,7 @@
 package com.base.demo.design;
 
 import com.alibaba.fastjson.JSON;
-import com.base.demo.design.model.AuthLink;
+import com.base.demo.design.channel.AuthLink;
 import com.base.demo.design.test.AuthService;
 import com.base.demo.design.test.impl.Level1AuthLink;
 import com.base.demo.design.test.impl.Level2AuthLink;

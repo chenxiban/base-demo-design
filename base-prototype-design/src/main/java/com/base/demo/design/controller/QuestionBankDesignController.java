@@ -1,8 +1,8 @@
 package com.base.demo.design.controller;
 
 import com.base.demo.design.impl.QuestionBank;
-import com.base.demo.design.model.AnswerQuestion;
-import com.base.demo.design.model.ChoiceQuestion;
+import com.base.demo.design.channel.AnswerQuestion;
+import com.base.demo.design.channel.ChoiceQuestion;
 import com.base.demo.design.utils.Constant;
 
 import java.util.HashMap;

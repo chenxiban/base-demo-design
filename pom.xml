@@ -36,6 +36,8 @@
         <module>base-iterator-design</module>
         <!-- 实战观察者模式「模拟类似小客车指标摇号过程，监听消息通知用户中签场景」 -->
         <module>base-observer-design</module>
+        <!-- 实战桥接模式「多支付渠道(微信、支付宝)与多支付模式(刷脸、指纹)场景」 -->
+        <module>base-bridge-design</module>
     </modules>
 
     <dependencies>

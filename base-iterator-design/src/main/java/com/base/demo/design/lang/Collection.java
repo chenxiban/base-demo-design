@@ -68,6 +68,7 @@ public interface Collection<E, L> extends Iterable<E> {
      * @author ChenYongJia
      * @version 1.0
      */
+    @Override
     Iterator<E> iterator();
 
 }

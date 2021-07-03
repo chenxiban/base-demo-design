@@ -34,6 +34,8 @@
         <module>base-adapter-design</module>
         <!-- 实战迭代器模式「模拟公司组织架构树结构关系，深度迭代遍历人员信息输出场景」 -->
         <module>base-iterator-design</module>
+        <!-- 实战观察者模式「模拟类似小客车指标摇号过程，监听消息通知用户中签场景」 -->
+        <module>base-observer-design</module>
     </modules>
 
     <dependencies>

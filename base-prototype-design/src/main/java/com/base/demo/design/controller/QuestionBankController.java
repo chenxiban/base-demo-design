@@ -22,9 +22,16 @@ public class QuestionBankController {
 
     /**
      * 创建考题
+     * <p>
+     * 这样的代码往往都非常易于理解，要什么程序就给什么代码，不面向对象，只面向过程。不考虑扩展性，能用就行。
+     * <p>
+     * 以上的代码主要就三部分内容；首先创建选择题和问答题到集合中、定义详情字符串包装结果、返回结果内容。
+     * <p>
+     * 但以上的代码有一个没有实现的地方就是不能乱序，所有人的试卷顺序都是一样的。如果需要加乱序也是可以的，
+     * 但复杂度又会增加。这里不展示具体过多实现，只为后文对比重构。
      *
      * @param candidate 候选人
-     * @param number    数量
+     * @param number    考号
      * @return java.lang.String
      * @date 2021/7/2 8:56
      * @author ChenYongJia

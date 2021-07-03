@@ -27,7 +27,7 @@ public class Level3AuthLink extends AuthLink {
     }
 
     /**
-     * 审核流程
+     * 审核流程--先判断是否审核通过，如果没有审核通过则返回结果给调用方，引导去审核。
      *
      * @param uId      用户id
      * @param orderId  订单id
@@ -41,8 +41,9 @@ public class Level3AuthLink extends AuthLink {
     public AuthInfo doAuth(String uId, String orderId, Date authDate) {
         Date date = AuthService.queryAuthInfo(levelUserId, orderId);
         if (null == date) {
-            return new AuthInfo("0001", "单号：", orderId, " 状态：待三级审批负责人 ", levelUserName);
+            return new AuthInfo("0001", "单号：", orderId, " 状态：待三级审批，负责人 ", levelUserName);
         }
+
         AuthLink next = super.next();
         if (null == next) {
             return new AuthInfo("0000", "单号：", orderId, " 状态：三级审批负责人完成", " 时间：", f.format(date), " 审批人：", levelUserName);

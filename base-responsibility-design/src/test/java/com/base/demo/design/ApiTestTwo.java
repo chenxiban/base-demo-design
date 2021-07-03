@@ -24,6 +24,21 @@ import java.util.Date;
 @Slf4j
 public class ApiTestTwo {
 
+    /**
+     * 这里包括最核心的责任链创建，实际的业务中会包装到控制层；
+     * AuthLink authLink = new Level3AuthLink("1000013", "王工") .appendNext(new Level2AuthLink("1000012", "张经理")
+     * .appendNext(new Level1AuthLink("1000011", "段总"))); 通过把不同的责任节点进行组装，构成一条完整业务的责任链。
+     * <p>
+     * 接下来不断的执行查看审核链路authLink.doAuth(...)，通过返回结果对数据进行3、2、1级负责人审核，直至最后审核全部完成。
+     * <p>
+     * 从结果可以看到我们的责任链已经生效，按照责任链的结构一层层审批，直至最后输出审批结束到一级完成的结果。
+     * 这样责任链的设计方式可以方便的进行扩展和维护，也把if语句干掉了。
+     *
+     * @return void
+     * @date 2021/7/3 10:15
+     * @author ChenYongJia
+     * @version 1.0
+     */
     @Test
     public void test_AuthLink() throws ParseException {
         AuthLink authLink = new Level3AuthLink("1000013", "王工")

@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
- * @Description: 审核信息
+ * @Description: 责任链中返回对象定义
  * @BelongsProject: base-demo-design
  * @BelongsPackage: com.base.demo.design.model
  * @Author: ChenYongJia
@@ -20,13 +20,19 @@ import lombok.ToString;
 @ToString
 public class AuthInfo {
 
+    /**
+     * code 编码
+     */
     private String code;
 
+    /**
+     * 详细信息
+     */
     private String info = "";
 
-    public AuthInfo(String code, String ...infos) {
+    public AuthInfo(String code, String... infos) {
         this.code = code;
-        for (String str:infos){
+        for (String str : infos) {
             this.info = this.info.concat(str);
         }
     }

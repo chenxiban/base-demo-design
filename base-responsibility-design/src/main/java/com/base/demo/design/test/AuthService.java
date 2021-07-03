@@ -19,13 +19,17 @@ public class AuthService {
 
     /**
      * 权限Map集合
+     * <p>
+     * 这里面提供了两个接口一个是查询审核结果(queryAuthInfo)、另外一个是处理审核(auth)。
+     * <p>
+     * 这部分是把由谁审核的和审核的单子ID作为唯一key值记录到内存Map结构中。
      */
     private static Map<String, Date> authMap = new ConcurrentHashMap<String, Date>();
 
     /**
-     * 查询审核信息(时间)
+     * 查询审核结果
      *
-     * @param uId 用户id
+     * @param uId     用户id
      * @param orderId 订单id
      * @return java.util.Date
      * @date 2021/7/1 16:58
@@ -39,7 +43,7 @@ public class AuthService {
     /**
      * 审核流程
      *
-     * @param uId 用户id
+     * @param uId     用户id
      * @param orderId 订单id
      * @return void
      * @date 2021/7/1 16:58

@@ -22,7 +22,7 @@ public class Level1AuthLink extends AuthLink {
     }
 
     /**
-     * 做审批
+     * 做审批--先判断是否审核通过，如果没有审核通过则返回结果给调用方，引导去审核。（这里简单模拟审核后有时间信息不为空，作为判断条件）
      *
      * @param uId      用户id
      * @param orderId  订单id
@@ -38,11 +38,14 @@ public class Level1AuthLink extends AuthLink {
         if (null == date) {
             return new AuthInfo("0001", "单号：", orderId, " 状态：待一级审批负责人 ", levelUserName);
         }
+
+        // 判断完成后获取下一个审核节点；super.next();，如果不存在下一个节点，则直接返回结果。
         AuthLink next = super.next();
         if (null == next) {
             return new AuthInfo("0000", "单号：", orderId, " 状态：一级审批完成负责人", " 时间：", f.format(date), " 审批人：", levelUserName);
         }
 
+        // 返回下一个审核结果；next.doAuth(uId, orderId, authDate);，有点像递归调用。
         return next.doAuth(uId, orderId, authDate);
     }
 

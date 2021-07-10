@@ -22,3 +22,7 @@ public class Singleton_00 {
 1.以上这种方式在我们平常的业务开发中非常场常见，这样静态类的方式可以在第一次运行的时候直接初始化Map类，同时这里我们也不需要到延迟加载在使用。
 2.在不需要维持任何状态下，仅仅用于全局访问，这个使用静态类的方式更加方便。
 3.但如果需要被继承以及需要维持一些特定状态的情况下，就适合使用单例模式。
+
+https://www.cnblogs.com/xiaobaituyun/p/10821565.html
+
+https://bugstack.cn/itstack-demo-design/2020/05/20/%E9%87%8D%E5%AD%A6Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%AE%9E%E6%88%98%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F.html

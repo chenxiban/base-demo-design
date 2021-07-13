@@ -5,7 +5,8 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @Description: 模拟审核服务
+ * @Description: 模拟审核服务 这里的代码结构比较简单，只有一个模拟审核和查询审核结果的服务类。
+ * 相当于你可以调用这个类去审核工程和获取审核结构，这部分结果信息是模拟的写到缓存实现。
  * 1. auth          审核流程
  * 2. queryAuthInfo 查询审核信息(时间)
  * @BelongsProject: base-demo-design
@@ -24,7 +25,7 @@ public class AuthService {
      * <p>
      * 这部分是把由谁审核的和审核的单子ID作为唯一key值记录到内存Map结构中。
      */
-    private static Map<String, Date> authMap = new ConcurrentHashMap<String, Date>();
+    private static Map<String, Date> authMap = new ConcurrentHashMap<>();
 
     /**
      * 查询审核结果

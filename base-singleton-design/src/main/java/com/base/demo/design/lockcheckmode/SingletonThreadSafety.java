@@ -42,7 +42,9 @@ public final class SingletonThreadSafety {
     public static SingletonThreadSafety getInstance() {
         if (instance == null) {
             synchronized (SingletonThreadSafety.class) {
-                if (instance == null) instance = new SingletonThreadSafety();
+                if (instance == null) {
+                    instance = new SingletonThreadSafety();
+                }
             }
         }
         return instance;

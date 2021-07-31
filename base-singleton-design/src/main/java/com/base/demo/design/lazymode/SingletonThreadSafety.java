@@ -28,7 +28,7 @@ public final class SingletonThreadSafety {
      * 等到需要使用时进行创建，此种模式虽然是安全的，但由于把锁加到方法上后，
      * 所有的访问都因需要锁占用导致资源的浪费。如果不是特殊情况下，不建议此种方式实现单例模式。
      * <p>
-     * 可以保证在多线程环境下单例的唯一性，但是synchronied关键字会导致在同一时刻方法只能被一个线程所访问，性能低下。
+     * 可以保证在多线程环境下单例的唯一性，但是 synchronized 关键字会导致在同一时刻方法只能被一个线程所访问，性能低下。
      *
      * @return com.base.demo.design.lazymode.SingletonThreadNoSafety
      * @date 2021/6/26 17:31

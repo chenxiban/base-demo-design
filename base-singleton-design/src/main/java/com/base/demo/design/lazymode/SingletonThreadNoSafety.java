@@ -16,6 +16,11 @@ public final class SingletonThreadNoSafety {
      */
     private byte[] data = new byte[1024];
 
+    /**
+     * 单例模式有一个特点就是不允许外部直接创建，也就是new Singleton_01()，因此这里在默认的构造函数上添加了私有属性 private。
+     * <p>
+     * 目前此种方式的单例确实满足了懒加载，但是如果有多个访问者同时去获取对象实例你可以想象成一堆人在抢厕所，就会造成多个同样的实例并存，从而没有达到单例的要求。
+     */
     private static SingletonThreadNoSafety instance = null;
 
     /**

@@ -13,12 +13,11 @@ public final class SingletonThreadSafety {
 
     /**
      * 直接实例化对象
-     *
+     * <p>
      * 如果主动使用Singleton类，instance实例将直接完成创建，包括其中的实例变量都会得到初始化，
      * 但是instance可能被加载很长一段时间后才被使用，instance实例开辟的堆内存会驻留更久的时间，
      * 如果说一个类的成员变量不多，且占用内存资源较少，可以使用饿汉式，总结它可以保证多个线程下唯一实例，
      * getInstance方法性能较高，但是无法进行懒加载。
-     *
      */
     private static SingletonThreadSafety instance = new SingletonThreadSafety();
 
@@ -35,7 +34,9 @@ public final class SingletonThreadSafety {
      * <p>
      * 但此种方式并不是懒加载，也就是说无论你程序中是否用到这样的类都会在程序启动之初进行创建。
      * <p>
-     * 那么这种方式导致的问题就像你下载个游戏软件，可能你游戏地图还没有打开呢，但是程序已经将这些地图全部实例化。到你手机上最明显体验就一开游戏内存满了，手机卡了，需要换了。
+     * 那么这种方式导致的问题就像你下载个游戏软件，可能你游戏地图还没有打开呢，但是程序已经将这些地图全部实例化。
+     * <p>
+     * 到你手机上最明显体验就一开游戏内存满了，手机卡了，需要换了。
      *
      * @return com.base.demo.design.hungrymode.SingletonThreadSafety
      * @date 2021/6/26 17:40

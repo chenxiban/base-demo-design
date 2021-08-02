@@ -38,6 +38,8 @@
         <module>base-observer-design</module>
         <!-- 实战桥接模式「多支付渠道(微信、支付宝)与多支付模式(刷脸、指纹)场景」 -->
         <module>base-bridge-design</module>
+        <!-- 实战享元模式「基于Redis秒杀，提供活动与库存信息查询场景」 -->
+        <module>base-flyweight-design</module>
     </modules>
 
     <dependencies>

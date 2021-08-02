@@ -47,6 +47,7 @@
     |-- base-observer-design  观察者模式「模拟类似小客车指标摇号过程，监听消息通知用户中签场景」
     |-- base-adapter-design   适配器模式「从多个MQ消息体中，抽取指定字段值场景」
     |-- base-bridge-design    桥接模式「多支付渠道(微信、支付宝)与多支付模式(刷脸、指纹)场景」
+    |-- base-flyweight-design 实战享元模式「基于Redis秒杀，提供活动与库存信息查询场景」
     |-- 
     |-- 
     |-- 后续添加继续补齐
